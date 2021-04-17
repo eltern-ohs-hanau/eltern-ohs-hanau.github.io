@@ -1,0 +1,13 @@
+---
+layout: kategorie
+category: kategorie-methoden
+title: Unterrichtsmethoden
+---
+
+<div class="column col-12 text-center">
+  <h6 class="text-secondary">{{ site.categories }}</h6>
+</div>
+
+{% for post in site.categories.kategorie-methoden %}
+  {% include article-card.html %}
+{% endfor %}

@@ -1,0 +1,31 @@
+---
+layout: default
+---
+{% include header.html %}
+
+{% assign page_category = site.data.category_list[page.category] %}
+
+<div class="container-full negative-m-bottom">
+  <div class="container grid-xl">
+    <div class="columns negative-m-top">
+      <div class="column col-12">
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="{{ site.url }}{{ site.baseurl }}">Startseite</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="#">{{ page_category.name }}</a>
+          </li>
+        </ul>
+        <h2 class="text-light text-bold">{{ page_category.name }}</h2>
+        <p class="text-light mb-2">{{ page_category.description }}</p>
+      </div>
+      {% for post in site.categories[page.category] %}
+        {% include article-card.html %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+
+

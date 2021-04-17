@@ -1,6 +1,10 @@
 ---
 layout: post
 title: Willkommen
+date: 2021-04-11 17:00:00 +0200
+category: kategorie-weiteres
+author: muster
+short-description: Willkommen zur offenen Plattform des Informationsaustausch
 ---
 
 Willkommen zur offenen Plattform des Informationsaustausch der Eltern der Otto-Hahn-Schule Hanau!

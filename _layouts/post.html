@@ -2,16 +2,56 @@
 layout: default
 ---
 
-<article class="post">
-  <h1>{{ page.title }}</h1>
+{% include header.html %}
 
-  <div class="entry">
-    {{ content }}
+{% assign page_category = site.data.category_list[page.category] %}
+
+
+<div class="container-full negative-m-bottom">
+    <div class="container grid-xl">
+      <div class="columns negative-m-top">
+        <div class="column col-12">
+          <ul class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="{{ site.url }}{{ site.baseurl }}">Startseite</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="../{{ page.category }}">{{ page_category.name }}</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#">{{ page.title }}</a>
+            </li>
+          </ul>
+          <h2 class="text-light text-bold">{{ page.title }}</h2>
+          <p class="text-light mb-0">{{ page.short-description }}</p>
+        </div>
+        <div class="column col-12">
+          <div class="card">
+            <div class="card-body">
+                {% if site.use_authors == true %}
+                {% assign post_author = site.data.author_list[page.author] %}
+                <div class="flex-vertical-center mb-4">
+                  <figure class="avatar d-inline-block" style="align-items: center;">
+                    <img  src="../assets/{{ post_author.image }}" alt="...">
+                  </figure>
+                  <div class="ml-2">
+                    <p class="text-dark text-small mb-0">Verfasst von <span class="text-primary">{{ post_author.name }}</span></p>
+                    <p class="text-dark text-small text-italic mb-0">{% include reading-time.html %}</p>
+                  </div>
+                </div>
+                {% else %}
+                <div class="ml-2">
+                    <p class="m-0 text-small">Zuletzt geändert am:</p>
+                    <p class="text-dark text-small text-italic mb-0">{{ page.last_modified_at | date: "%B %e, %Y" }} - {% include reading-time.html %}</p>
+                  </div>
+                {% endif %}
+
+              {{ content }}
+            </div>
+          
+            {% include comments.html %}
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-
-  <div class="date">
-    Geschrieben am {{ page.date | date: "%B %e, %Y" }}
-  </div>
-
-  {% include disqus.html %}
-</article>
