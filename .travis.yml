@@ -6,13 +6,23 @@ git:
   depth: false
 
 before_script:
-- git checkout develop
 - chmod +x ./scripts/cibuild.sh
 
 # Assume bundler is being used, `bundle install` runs by default.
 script: ./scripts/cibuild.sh
 
-# branch whitelist for GitHub Pages
+# Deploy wiki pages and results of build, back to develop branch
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  target_branch: develop
+  keep_history: true
+  deployment_file: .versioninfo
+  on:
+    branch: develop
+
+# Branch whitelist for Travis CI
 branches:
   only:
   - develop
