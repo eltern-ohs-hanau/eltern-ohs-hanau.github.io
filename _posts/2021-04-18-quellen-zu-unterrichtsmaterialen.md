@@ -10,7 +10,7 @@ category: kategorie-material
 
 author: bitbauer
 
-short-description: Eine Auflistung frei verfügbarer Unterrichtsmaterialien für Schüler:innen und Lehrer:innen
+short-description: Eine Auflistung frei verfügbarer Unterrichtsmaterialien für Schüler-innen und Lehrer-innen
 
 ---
 
