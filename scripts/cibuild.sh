@@ -19,7 +19,7 @@ for f in _posts/*.md; do
   then
       rm "$f"
   else
-      mv "$f" "$prefix-$f"
+      mv "$f" "$(dirname $f)/$prefix-$(basename $f)"
   fi
 done
 
