@@ -23,6 +23,6 @@ Wir freuen uns über Rückmeldungen und Beteiligung.
 Folgende Möglichkeiten stehen dafür zur Verfügung:
 - **Kommentare zum Artikel** Bitte die [Regeln für Kommentare](/comment-policy.html) beachten!
 - **Chat mit anderen engagierten Eltern** Melde dich hier zu unserem [Slack Chat](https://eltern-ohs-hanau.slack.com/) an!
-- **Artikel schreiben** Unsere Portal benutzt [GitHub](https://github.com/eltern-ohs-hanau/eltern-ohs-hanau).
+- **Artikel schreiben** Unser Portal benutzt [GitHub](https://github.com/eltern-ohs-hanau/eltern-ohs-hanau).
 
 Diese Seite ist keine offizielle Seite der Verwaltung, Schulleitung oder eines offiziellen Gremiums der Schule. Alle Informationen, Problemschilderungen und Anregungen sind persönliche Meinungen von engagierten Eltern der Schülerinnen und Schüler.

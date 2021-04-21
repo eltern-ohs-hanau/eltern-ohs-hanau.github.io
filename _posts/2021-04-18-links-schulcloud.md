@@ -14,10 +14,7 @@ short-description: Kurze Übersicht zu Links für die HPI Schulcloud
 
 ---
 
-OHS Login: https://hpi-schul-cloud.de/login
-
-Systemstatus: https://status.hpi-schul-cloud.de/
-
-Grundkurs für Schülerinnen und Schüler: https://lernen.cloud/courses/fortbildung_sc2020
-
-Grundkurs für Lehrerinnen und Lehrer: https://lernen.cloud/courses/fortbildung_sc2020
+- [Schulcloud Login OHS: https://hpi-schul-cloud.de/login](https://hpi-schul-cloud.de/login)
+- [Schulcloud Systemstatus: https://status.hpi-schul-cloud.de/](https://status.hpi-schul-cloud.de/)
+- [Grundkurs für Schülerinnen und Schüler: https://lernen.cloud/courses/elternkurs_sc2020](https://lernen.cloud/courses/elternkurs_sc2020)
+- [Grundkurs für Lehrerinnen und Lehrer: https://lernen.cloud/courses/fortbildung_sc2020](https://lernen.cloud/courses/fortbildung_sc2020)
