@@ -1,0 +1,114 @@
+// Position
+.clearfix {
+  @include clearfix();
+}
+
+.float-left {
+  float: left !important;
+}
+
+.float-right {
+  float: right !important;
+}
+
+.p-relative {
+  position: relative !important;
+}
+
+.p-absolute {
+  position: absolute !important;
+}
+
+.p-fixed {
+  position: fixed !important;
+}
+
+.p-sticky {
+  position: sticky !important;
+  position: -webkit-sticky;
+  top: 10px;
+}
+
+.p-centered {
+  display: block;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-centered {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.flex-baseline {
+  display: flex;
+  align-items: flex-start;
+}
+
+.flex-split {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.negative-m-top {
+  margin-top: -100px;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -80px;
+}
+
+.header-bg {
+  flex-shrink: 0;
+}
+
+.negative-m-bottom {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex-shrink: 0;
+}
+
+// Spacing
+@include margin-variant(0, 0);
+
+@include margin-variant(1, $unit-1);
+
+@include margin-variant(2, $unit-2);
+
+@include margin-variant(4, $unit-4);
+
+@include margin-variant(8, $unit-8);
+
+@include margin-variant(12, $unit-12);
+
+@include margin-variant(16, $unit-16);
+
+@include padding-variant(0, 0);
+
+@include padding-variant(1, $unit-1);
+
+@include padding-variant(2, $unit-2);
+
+@include padding-variant(4, $unit-4);
+
+@include padding-variant(8, $unit-8);
+
+@include padding-variant(12, $unit-12);
+
+@include padding-variant(16, $unit-16);

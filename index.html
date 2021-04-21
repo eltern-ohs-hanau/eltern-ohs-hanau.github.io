@@ -1,18 +1,29 @@
 ---
 layout: default
+title: Home
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
+  {% include header.html %}
+    <div class="container-full negative-m-bottom">
+      <div class="container grid-xl">
+        <div class="columns negative-m-top">
+          <div class="column col-12 text-center">
+            <h6 class="text-secondary">Kategorie auswählen</h6>
+          </div>
+          {% for kategorie in site.data.category_list %}
+          {% capture kategorie_name %}{{ kategorie | first }}{% endcapture %}
+          {% assign page_category = site.data.category_list[kategorie_name] %}
+          <div class="column col-3 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <a href="{{ site.baseurl }}/{{ kategorie_name }}">
+              <div class="card card-link">
+                <div class="card-body text-center my-5">
+                  <h5 class="text-bold">{{ page_category.name }}</h5>
+                  <p class="m-0">{{ site.categories[kategorie_name] | size }} Artikel</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          {% endfor %} 
+        </div>
       </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+    </div>

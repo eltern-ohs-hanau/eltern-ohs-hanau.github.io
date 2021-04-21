@@ -1,0 +1,13 @@
+---
+layout: kategorie
+category: kategorie-material
+title: Unterrichtsmaterialen
+---
+
+<div class="column col-12 text-center">
+  <h6 class="text-secondary">{{ site.categories }}</h6>
+</div>
+
+{% for post in site.categories.material %}
+  {% include article-card.html %}
+{% endfor %}

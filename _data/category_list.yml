@@ -1,0 +1,14 @@
+#Diese Datei definiert die Kategorien
+
+kategorie-schulcloud:
+  name: Schulcloud
+  description: Alles rund um die HPI Schulcloud
+kategorie-material:
+  name: Unterrichtsmaterial
+  description: Frei verfügbare Materialen zum Lernen und für den Unterricht
+kategorie-methoden:
+  name: Unterrichtsmethoden
+  description: Tipps, Ideen und Anleitungen zu digitalen Unterrichtsmethoden
+kategorie-weiteres:
+  name: Weiteres
+  description: Weitere allgemeine Informationen und Anregungen
