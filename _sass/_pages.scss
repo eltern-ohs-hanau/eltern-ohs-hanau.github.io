@@ -1,7 +1,12 @@
 .page-bg {
   background-color: $gray-color-light;
-}
+  padding-top: $layout-spacing-lg;
+  padding-bottom: 0;
+ }
 
-.page-body {
-  padding: $layout-spacing-lg 0;
+.page {
+  padding: $layout-spacing-lg;
+  border: 1px solid $border-color;
+  background: $primary-color-white;
+  border-radius: $border-radius-lg;
 }

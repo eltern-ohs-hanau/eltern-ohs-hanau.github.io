@@ -32,7 +32,7 @@ layout: default
                 {% assign post_author = site.data.author_list[page.author] %}
                 <div class="flex-vertical-center mb-4">
                   <figure class="avatar d-inline-block" style="align-items: center;">
-                    <img  src="../assets/{{ post_author.image }}" alt="...">
+                    <img  src="{{ post_author.image }}" alt="...">
                   </figure>
                   <div class="ml-2">
                     <p class="text-dark text-small mb-0">Verfasst von <span class="text-primary">{{ post_author.name }}</span></p>
