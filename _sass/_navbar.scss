@@ -6,10 +6,8 @@
   padding: 15px 10px;
   &.dash-nav {
     padding: 12px 0;
-    .nav-links, .navbar-toggle {
+    .nav-links {
       color: $dark-color;
-    }.navbar-toggle {
-      top: 4px;
     }
   }
 }
@@ -17,11 +15,6 @@
 
 .nav-full {
   background: $primary-color-white;
-}
-
-.main-nav {
-  list-style-type: none;
-  display: none;
 }
 
 .nav-links {
@@ -39,7 +32,8 @@
 }
 
 .logo {
-  display: flex;
+  display: block;
+  width: 128px;
   align-items: center;
   border: 0;
   h4 {
@@ -60,58 +54,41 @@
   }
 }
 
-.navbar-toggle {
-  position: absolute;
-  top: 14px;
-  right: 20px;
-  cursor: pointer;
-  color: $nav-font-color;
-  font-size: 24px;
-}
-
 .active {
   display: block;
 }
 
-@media screen and (min-width: 768px) {
-  .navbar {
-        padding: 30px 10px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        & .dash-nav {
-          padding: 20px 0;
+.navbar {
+  padding: 30px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & .dash-nav {
+    padding: 20px 0;
+  }
+  .main-nav {
+    display: flex;
+    list-style-type: none;
+    margin-right: 30px;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    li {
+      margin: 0;
+      margin-left: 20px;
+      &.nav-divider {
+        width: 2px;
+        background: $primary-color-white;
+        height: 20px;
+        &.divider-dark {
+          background: $dark-color;
         }
-        .navbar-toggle {
-              display: none;
-        }
-        .logo {
-              margin-top: 0;
-        }
-        .main-nav {
-              display: flex;
-              margin-right: 30px;
-              flex-direction: row;
-              align-items: center;
-              margin: 0;
-              li {
-                    margin: 0;
-                    margin-left: 20px;
-                    &.nav-divider {
-                      width: 2px;
-                      background: $primary-color-white;
-                      height: 20px;
-                      &.divider-dark {
-                        background: $dark-color;
-                      }
-                    }
-                    & a.active {
-                      color: $error;
-                      border: 2px solid transparent;
-                      text-decoration: none;
-                    }
-              }
-        }
-
-  }  
-}
+      }
+      & a.active {
+        color: $error;
+        border: 2px solid transparent;
+        text-decoration: none;
+      }
+    }
+  }
+}  
