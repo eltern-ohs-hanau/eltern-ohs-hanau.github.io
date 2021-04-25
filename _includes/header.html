@@ -3,10 +3,13 @@
     <div class="header ">
       <nav class="container grid-xl navbar">
         <div class="flex-vertical-center">
-          <a style="width: 20%;" href="{{ site.url }}{{ site.baseurl }}" class="logo">
+          <a style="width: 20%;" href="{{ site.url }}{{ site.baseurl }}" class="logo hide-xs">
             <img style="max-width: 100%;" src="{{ site.avatar }}"/>
           </a>
-          <p class="m-0 ml-2 text-light d-inline">{{ site.name }}</p>
+          <p class="m-0 ml-2 text-light d-inline hide-xs">{{ site.name }}</p>
+          <p class="m-0 ml-2 d-inline show-xs"><a href="{{ site.url }}{{ site.baseurl }}" class="nav-links nav-link-home">
+            {{ site.name }}
+          </a></p>
         </div>
         <ul class="main-nav">
           <li>
