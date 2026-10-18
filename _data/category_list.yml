@@ -1,8 +1,8 @@
 #Diese Datei definiert die Kategorien
 
-kategorie-schulcloud:
-  name: Schulcloud
-  description: Alles rund um die HPI Schulcloud
+kategorie-newsletter:
+  name: Newsletter
+  description: Newsletter des Schulelternbeirats
 kategorie-material:
   name: Unterrichtsmaterial
   description: Frei verfügbare Materialen zum Lernen und für den Unterricht
